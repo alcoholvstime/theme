@@ -1,12 +1,51 @@
 <!doctype html>
-<html>
-  <body>
-    <figure id="1">
-      <img src="http://placehold.it/500x300" data-src="7b1f2c54aa3bea03835f">
-    </figure>
-    <figure id="2">
-      <img src="http://placehold.it/500x300" data-src="77d18326ae689071bc1b">
-    </figure>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>d3 Graph Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="dns-prefetch" href="https://api.github.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://api.github.com" crossorigin>
+
+    <style>      
+      .line, .axis path {
+        fill: none;
+        stroke: #444;
+        stroke-width: 2px;
+      }
+
+      .line {
+        shape-rendering: geometricPrecision;
+      }
+
+      .axis path {
+        shape-rendering: crispEdges;
+      }
+    </style>
+  </head>
+
+  <body aria-role="document">
+    <main aria-role="main">
+      <figure id="fig1">
+        <img src="http://placehold.it/500x300" data-src="7b1f2c54aa3bea03835f">
+      </figure>
+      <figure id="fig2">
+        <img src="http://placehold.it/500x300" data-src="77d18326ae689071bc1b">
+      </figure>
+    </main>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
   <script src="../dist/js/app.js"></script>
+  <script src="../tests/js/graphTest.js"></script>
+
 </html>
